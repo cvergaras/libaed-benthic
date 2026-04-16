@@ -33,6 +33,10 @@ INCLUDES=-I../libaed-water/${incdir}  -I../libaed-water/${moddir}
 
 include ../libaed-water/make_defs.inc
 
+FFLAGS += -fPIC
+CFLAGS += -fPIC
+FCFLAGS += -fPIC
+
 OBJS=${objdir}/aed_bivalve.o \
      ${objdir}/aed_habitat_benthic.o \
      ${objdir}/aed_habitat_ruppia.o \
